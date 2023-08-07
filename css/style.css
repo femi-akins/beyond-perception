@@ -41,6 +41,7 @@ button.black {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  border: none;
 }
 
 /* HOME PAGE */
@@ -93,6 +94,11 @@ button.black {
   color: #0b3470;
 }
 
+#header div button:hover {
+  color: #fff;
+  background-color: #0b3470;
+}
+
 /* hero */
 #hero {
   padding: 134px 120px;
@@ -128,6 +134,16 @@ button.black {
   gap: 15px;
 }
 
+#hero .hero-btn .normal:hover {
+  color: #fff;
+  background-color: #0b3470;
+}
+
+#hero .hero-btn .black:hover {
+  color: #fff;
+  background: var(--yellow, #f1ab16);
+}
+
 #hero .hero-btn span {
   margin-left: 260px;
   margin-top: -55px;
@@ -155,11 +171,12 @@ button.black {
 
 /* clients */
 #client {
-  padding: 0 120px;
+  padding: 60px 120px;
   background: var(--white, #fff);
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 40vh;
 }
 
 #client h4 {
@@ -174,4 +191,18 @@ button.black {
   list-style: none;
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+#client ul li {
+  padding: 0 40px;
+}
+
+#client .logo-1 {
+  padding: 40px 0;
+}
+
+/* services */
+#Home-service {
+  background: #fafafa;
 }
