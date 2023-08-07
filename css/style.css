@@ -158,6 +158,8 @@ button.black {
   padding: 0 120px;
   background: var(--white, #fff);
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #client h4 {
@@ -166,4 +168,10 @@ button.black {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+#client ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
