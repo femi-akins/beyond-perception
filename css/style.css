@@ -44,6 +44,11 @@ button.black {
   border: none;
 }
 
+button.black:hover {
+  color: #000;
+  background: #f1ab16;
+}
+
 /* HOME PAGE */
 #header {
   display: flex;
@@ -81,10 +86,9 @@ button.black {
 #navbar li a {
   text-decoration: none;
   color: #000;
-  font-family: Krub;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   transition: 0.3s ease;
 }
@@ -139,11 +143,6 @@ button.black {
   background-color: #0b3470;
 }
 
-#hero .hero-btn .black:hover {
-  color: #fff;
-  background: var(--yellow, #f1ab16);
-}
-
 #hero .hero-btn span {
   margin-left: 260px;
   margin-top: -55px;
@@ -176,7 +175,7 @@ button.black {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 40vh;
+  height: 60vh;
 }
 
 #client h4 {
@@ -205,4 +204,35 @@ button.black {
 /* services */
 #Home-service {
   background: #fafafa;
+  padding: 60px 120px;
+}
+
+#Home-service h5 {
+  color: var(--grey-3, #000);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #ffe8bb;
+  background: #fff9ed;
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home-service .home-service-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#Home-service .home-service-head h4 {
+  color: var(--blue, #0b3470);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+  width: 498px;
 }
