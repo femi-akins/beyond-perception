@@ -617,11 +617,8 @@ button.black:hover {
 /* ABOUT US PAGE */
 #hero.about-page {
   padding: 100px 120px;
-  height: 968px;
   background: #f1f7ff;
-}
-
-#hero.about-page .hero-text {
+  height: 890px;
 }
 
 #hero.about-page h6 {
@@ -648,12 +645,12 @@ button.black:hover {
 #hero.about-page p {
   width: 804px;
   color: var(--grey-3, #000);
-
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
 }
+
 #hero.about-page .hero-banner .image {
   width: 100%;
   margin-top: -50px;
@@ -665,4 +662,220 @@ button.black:hover {
   height: 80vh;
   object-fit: cover;
   background-repeat: no-repeat;
+}
+
+#feat {
+  background: var(--white, #fff);
+  padding: 80px 120px;
+}
+
+#feat .feat-text {
+  display: flex;
+}
+
+#feat .feat-text .feat1 {
+  width: 33%;
+  padding: 45px 70px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#feat .feat-text .feat2 {
+  width: 33%;
+  padding: 45px 70px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#feat .feat-text .feat3 {
+  width: 33%;
+  padding: 45px 75px;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#feat .feat-text .feat1 h2,
+#feat .feat-text .feat2 h2,
+#feat .feat-text .feat3 h2 {
+  color: var(--blue, #0b3470);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#feat .feat-text .feat1 p,
+#feat .feat-text .feat2 p,
+#feat .feat-text .feat3 p {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#feat hr {
+  margin: 80px 0;
+}
+
+#feat .feat-body h2 {
+  width: 465px;
+  color: var(--grey-3, #000);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px; /* 134.375% */
+}
+
+#feat .feat-body h6 {
+  padding: 30px 0;
+  color: var(--grey-3, #000);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 170% */
+}
+
+#feat .feat-body p {
+  color: var(--grey-3, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+#mission {
+  padding: 80px 120px;
+}
+
+#mission h5 {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+#mission h2 {
+  color: var(--blue, #0b3470);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+#mission .mission-card {
+  padding: 40px 0;
+}
+
+#mission .mission-card .card {
+  padding: 48px 20px;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #f0e6e6;
+  background: #f8f8f8;
+  width: 97%;
+}
+
+#mission .mission-card .card .card-title {
+  color: var(--grey-3, #000);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#mission .mission-card .card .card-text {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#mission .mission-card #row2 {
+  padding-top: 40px;
+}
+
+#team {
+  padding: 80px 120px;
+
+  height: 1261px;
+  flex-shrink: 0;
+  background: #fbfbfb;
+}
+
+#team h5 {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#team h2 {
+  color: var(--blue, #0b3470);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 498px;
+}
+
+#team .team-profiles {
+  padding-top: 40px;
+}
+#team .team-profiles #row2 {
+  padding-top: 40px;
+}
+
+#team .team-profile .team-img {
+  padding-bottom: 30px;
+}
+
+#team .team-profile .team-img img {
+  width: 100%;
+  height: 260px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#team .team-profile .team-name {
+  color: var(--grey-3, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#team .team-profile .team-title {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#team .team-profile .team-socials {
+  display: flex;
+  gap: 10px;
+}
+
+#team .team-profile .team-socials i {
+  width: 30px;
+  height: 30px;
+  color: #f1ab16;
+  font-size: 22px;
 }
