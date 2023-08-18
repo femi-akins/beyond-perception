@@ -27,6 +27,11 @@ button.normal {
   border: none;
 }
 
+button.normal:hover {
+  color: #fff;
+  background-color: #0b3470;
+}
+
 button.black {
   display: inline-flex;
   padding: 16px 40px;
@@ -96,11 +101,6 @@ button.black:hover {
 #navbar li a:hover,
 #navbar li a.active {
   color: #0b3470;
-}
-
-#header div button:hover {
-  color: #fff;
-  background-color: #0b3470;
 }
 
 /* hero */
@@ -502,6 +502,10 @@ button.black:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  background: var(--yellow, #ddd);
+}
+
+#portfolio .portfolio-list .tab:hover {
   background: var(--yellow, #f1ab16);
 }
 
@@ -611,6 +615,104 @@ button.black:hover {
   font-size: 13.5px;
   font-style: normal;
   font-weight: 500;
+  line-height: normal;
+}
+
+#join {
+  padding: 80px 120px;
+}
+
+#join .join-content {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  border-radius: 16px;
+  background: #fffbf2;
+  padding: 80px 60px;
+}
+
+#join .join-content h6 {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#join .join-content h2 {
+  color: var(--blue, #0b3470);
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 142.857% */
+  padding: 10px 0;
+}
+
+/* footer */
+footer {
+  padding: 40px 120px 20px 120px;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .footer-links li {
+  list-style: none;
+  padding: 0 15px;
+  margin-top: 14px;
+}
+
+footer .footer-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s ease;
+}
+
+footer .footer-icons {
+  padding-bottom: 30px;
+}
+
+footer .footer-icons a {
+  text-decoration: none;
+  color: #0b3470;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  font-size: 22px;
+  border-radius: 100%;
+  margin: 0 10px;
+  background: var(--grey-2, #f2f0f0);
+}
+
+footer .footer-links {
+  padding: 10px 0;
+}
+
+footer hr {
+  opacity: 0.1;
+}
+
+footer .copyright {
+  padding-top: 20px;
+}
+footer .copyright p {
+  color: var(--grey-1, #363c46);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -724,6 +826,7 @@ button.black:hover {
 
 #feat hr {
   margin: 80px 0;
+  opacity: 0.1;
 }
 
 #feat .feat-body h2 {
@@ -812,7 +915,6 @@ button.black:hover {
 #team {
   padding: 80px 120px;
 
-  height: 1261px;
   flex-shrink: 0;
   background: #fbfbfb;
 }
