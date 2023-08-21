@@ -561,6 +561,7 @@ button.black:hover {
 .radio {
   display: none;
 }
+
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel {
@@ -580,6 +581,7 @@ button.black:hover {
   flex-direction: column;
   align-items: center;
   background: #fafafa;
+  height: 1650px;
 }
 
 #blog h5 {
@@ -612,19 +614,137 @@ button.black:hover {
   width: 458px;
 }
 
-#blog .blog-list {
-  display: flex;
-  gap: 18px;
-  padding: 20px 0;
+/* Style the tab */
+#blog .tab {
+  overflow: hidden;
 }
 
-#blog .blog-list a {
-  text-decoration: none;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 14px;
+  margin-bottom: 50px;
+  padding: 12px 0;
+  transition: 0.3s;
   color: var(--grey-1, #363c46);
   font-size: 13.5px;
   font-style: normal;
   font-weight: 500;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom: 2px solid #f1ab16;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: var(--blue, #0b3470);
+  border-bottom: 2px solid #f1ab16;
+}
+
+/* Style the tab content */
+.tabcontent {
+  border-top: none;
+  width: 100%;
+}
+
+#blog .tabcontent a {
+  text-decoration: none;
+}
+
+#blog .tabcontent .blog-contents {
+  width: 100%;
+}
+
+#blog .blog-contents .blog-img img {
+  width: 100%;
+  height: 303px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+#blog .tabcontent .blog-contents .blog-title {
+  display: flex;
+}
+
+#blog .tabcontent .blog-contents .blog-text {
+  padding-top: 15px;
+  background: #fff;
+}
+
+#blog .tabcontent .blog-contents span {
+  color: var(--blue, #0b3470);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
+}
+
+#blog .tabcontent .blog-contents small {
+  color: var(--grey-1, #363c46);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#blog .tabcontent .blog-contents i {
+  font-size: 5px;
+  color: #dcdcdc;
+  padding: 6px 8px;
+}
+
+#blog .tabcontent .blog-contents h2 {
+  width: 364px;
+  color: var(--grey-1, #363c46);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+#blog .tabcontent .blog-contents p {
+  color: var(--grey-1, #363c46);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+
+#blog .tabcontent .blog-contents p span {
+  color: var(--blue, #0b3470);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+#blog .tabcontent .blog-footer {
+  display: flex;
+  padding: 20px 0;
+  background: #fafafa;
+}
+
+#blog .tabcontent .blog-footer img {
+  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+}
+
+#blog .tabcontent .blog-contents .blog-footer p {
+  color: var(--grey-1, #363c46);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 8px 10px;
 }
 
 #join {
@@ -1020,15 +1140,6 @@ footer .copyright p {
   font-style: normal;
   font-weight: 700;
   line-height: 78px; /* 139.286% */
-}
-
-#hero.service-page p {
-  width: 798px;
-  color: var(--grey-3, #000);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34px;
 }
 
 #hero.service-page .hero-banner .row {
@@ -1475,3 +1586,56 @@ footer .copyright p {
 #testimonial span {
   display: none;
 }
+
+/* BLOG PAGE */
+#hero.blog-page {
+  padding: 100px 120px;
+  background: var(--white, #fff);
+  height: 508px;
+}
+
+#hero.blog-page .hero-text {
+  width: 100%;
+}
+
+#hero.blog-page h6 {
+  color: var(--grey-3, #000);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border-radius: 100px;
+  border: 1px solid #ffe3a8;
+  background: #fff7e8;
+}
+
+#hero.blog-page h3 {
+  color: var(--blue, #0b3470);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#hero.about-page p {
+  width: 741px;
+  color: var(--grey-3, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+/* [type="radio"]:checked ~ label {
+  border-bottom: 2px solid #1d1d;
+  color: #1d1d1d;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .tab__content {
+  z-index: 1;
+  opacity: 1;
+} */
