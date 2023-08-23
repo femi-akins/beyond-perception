@@ -71,7 +71,7 @@
 
       <div class="blog-head">
         <h4>Unveiling the World Through Our Blog</h4>
-        <a href="service.html"><button class="black">All posts</button></a>
+        <a href="#Blog1"><button class="black">All posts</button></a>
       </div>
 
       <div class="tab">
@@ -908,6 +908,27 @@
         </div>
       </div>
     </section>
+
+    <section id="pagination">
+      <div class="page">
+        <h1>Showing 1 - 15 out of 25</h1>
+      </div>
+
+      <div class="pagination">
+        <button class="btn1" onclick="backBtn()">Previous</button>
+        <ul>
+          <li class="link active" onclick="activeLink()" value="1">1</li>
+          <li class="link" onclick="activeLink()" value="2">
+            <a href="index.html"></a>2
+          </li>
+          <li class="link" onclick="activeLink()" value="3">3</li>
+          <li class="link" onclick="activeLink()" value="4">4</li>
+          <li class="link" onclick="activeLink()" value="5">5</li>
+        </ul>
+        <button class="btn2" onclick="nextBtn()">Next</button>
+      </div>
+    </section>
+
     <hr style="opacity: 0.1" />
 
     <!-- footer -->
@@ -943,4 +964,38 @@
   ></script>
 
   <script src="js/index.js"></script>
+
+  <script>
+    let link = document.getElementsByClassName("link");
+    let currentValue = 1;
+
+    function activeLink() {
+      for (l of link) {
+        l.classList.remove("active");
+      }
+
+      event.target.classList.add("active");
+      currentValue = event.target.value;
+
+      function backBtn() {
+        if (currentValue > 1) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue--;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+
+      function nextBtn() {
+        if (currentValue < 6) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+    }
+  </script>
 </html>

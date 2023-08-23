@@ -988,8 +988,26 @@ footer .copyright p {
   padding: 80px 120px;
 }
 
+#mission .mission-text {
+  background: #fffbf2;
+  text-align: center;
+  padding: 30px 60px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#mission .mission-text p {
+  color: var(--grey-1, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 185.714% */
+  width: 80%;
+}
+
 #mission h5 {
-  color: var(--grey-1, #363c46);
+  color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1017,6 +1035,7 @@ footer .copyright p {
   border: 1px solid #f0e6e6;
   background: #f8f8f8;
   width: 97%;
+  height: 550px;
 }
 
 #mission .mission-card .card .card-title {
@@ -1030,6 +1049,23 @@ footer .copyright p {
 }
 
 #mission .mission-card .card .card-text {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#mission .mission-footer {
+  padding: 48px 35px;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid #f0e6e6;
+  background: #f8f8f8;
+  width: 98.5%;
+}
+
+#mission .mission-footer p {
   color: var(--grey-1, #363c46);
   font-size: 16px;
   font-style: normal;
@@ -1254,7 +1290,7 @@ footer .copyright p {
 }
 
 #service #card-5 {
-  height: 555px;
+  height: 680px;
   border-radius: 16px;
   background: #f4e9ff;
   overflow: hidden;
@@ -1263,7 +1299,7 @@ footer .copyright p {
 }
 
 #service #card-6 {
-  height: 613px;
+  height: 743px;
   border-radius: 16px;
   background: #eaeaea;
   overflow: hidden;
@@ -1396,7 +1432,7 @@ footer .copyright p {
 
 #service #card-1 .card-img {
   position: relative;
-  top: 12%;
+  top: 18%;
   left: 45%;
   bottom: 0;
   right: 0;
@@ -1419,8 +1455,8 @@ footer .copyright p {
 
 #service #card-2 .card-img {
   position: relative;
-  top: -10%;
-  left: 75%;
+  top: -7%;
+  left: 73%;
   bottom: 0;
   right: 0;
 }
@@ -1489,8 +1525,8 @@ footer .copyright p {
 
 #service #card-5 .card-img {
   position: relative;
-  top: -2%;
-  left: 55%;
+  top: -4%;
+  left: 57%;
   bottom: 0;
   right: 0;
 }
@@ -1512,7 +1548,7 @@ footer .copyright p {
 
 #service #card-6 .card-img {
   position: relative;
-  top: 2%;
+  top: 8%;
   left: 60%;
   bottom: 0;
   right: 0;
@@ -1754,7 +1790,7 @@ footer .copyright p {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  height: 5680px;
+  height: 3100px;
 }
 
 #blog-2 a {
@@ -1850,4 +1886,67 @@ footer .copyright p {
   font-weight: 500;
   line-height: normal;
   padding: 8px 10px;
+}
+
+#pagination {
+  margin: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--grey-6, #eff6f2);
+  background: var(--white, #fff);
+  padding: 5px 32px;
+  align-items: center;
+}
+
+#pagination .page h1 {
+  color: var(--grey-1, #363c46);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+#pagination .pagination {
+  display: flex;
+  align-items: center;
+  color: #383838;
+  padding: 21px 20px;
+  border-radius: 16px;
+}
+
+#pagination .pagination ul {
+  margin: 0;
+  padding: 0 15px;
+}
+
+#pagination .pagination ul li {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  cursor: pointer;
+  background-position: 0 -45px;
+  transition: background-position 0.5s;
+}
+
+#pagination .pagination ul li.active {
+  background: var(--blue, #0b3470);
+  color: #fff;
+  background-position: 0 0;
+}
+
+#pagination .pagination .btn1,
+#pagination .pagination .btn2 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border: none;
 }
